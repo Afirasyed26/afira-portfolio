@@ -3,53 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <title>Afira Syed | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(135deg, #f9f7f7, #dbe2ef);
       color: #2d3436;
       padding: 30px;
       line-height: 1.6;
+      animation: fadeIn 1s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 10px;
+      color: #222f3e;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      border-right: 2px solid #000;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards;
     }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
     h2 {
       font-size: 2em;
       margin-top: 40px;
       margin-bottom: 15px;
+      color: #0d47a1;
     }
+
     ul {
       list-style-type: none;
       padding-left: 0;
     }
+
     li {
       background-color: #ffffff;
       border: 1px solid #dfe6e9;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 25px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: 0.3s;
     }
+
+    li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
     a {
       color: #0984e3;
       text-decoration: none;
       font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     iframe {
       margin-top: 15px;
       border-radius: 8px;
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
     }
-    .contact, .skills {
+
+    .skills, .contact {
       background-color: #ffffff;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       margin-top: 30px;
+    }
+
+    .contact p, .skills li {
+      margin: 10px 0;
+    }
+
+    .contact i, .skills i {
+      margin-right: 10px;
+      color: #0d47a1;
     }
   </style>
 </head>
@@ -63,47 +109,48 @@
   <ul>
     <li>
       <b>🏡 Real Estate Price Prediction</b><br>
-      A machine learning project using Python to predict housing prices based on features like location, size, and number of bedrooms. Trained and evaluated multiple regression models to find the best performer.<br>
+      A machine learning project using Python to predict housing prices based on features like location, size, and number of bedrooms.<br>
       🔗 <a href="https://github.com/Afirasyed26/real-estate-price-prediction" target="_blank">View on GitHub</a>
     </li>
+
     <li>
       <b>📊 Sales Performance Dashboard using Power BI</b><br>
-      My first-ever Power BI dashboard project with interactive slicers, KPI cards, and region-wise insights for better sales analysis and decision-making.<br>
+      My first-ever Power BI dashboard project with interactive slicers, KPI cards, and region-wise insights.<br>
       🔗 <a href="https://github.com/Afirasyed26/Retail-Sales-Analysis-Dashboard-using-Power-BI" target="_blank">View on GitHub</a><br><br>
-      <iframe src="https://drive.google.com/file/d/1N1hUj81HrjV2F4ZrimakscYBUolqpJ5M/preview" width="640" height="360" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1N1hUj81HrjV2F4ZrimakscYBUolqpJ5M/preview" allow="autoplay"></iframe>
     </li>
+
     <li>
       <b>📈 CEO & CMO Insights Dashboard using Power BI</b><br>
-      A strategic executive-level dashboard built to answer key business questions using revenue trends, customer insights, top markets, and demand forecasting. Focused on aiding CEO and CMO decision-making.<br>
+      A strategic dashboard for executive decision-making — includes monthly trends, top customers, high-performing countries (excluding UK), and demand insights.<br>
       🔗 <a href="https://github.com/Afirasyed26/CEO-CMO-Focused-Business-Intelligence-Dashboard-Power-BI" target="_blank">View on GitHub</a><br><br>
-      <iframe src="https://drive.google.com/file/d/1IssU_ZEhfBPm-EK_WzAgTG2IF-eRGFDv/preview" width="640" height="360" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1IssU_ZEhfBPm-EK_WzAgTG2IF-eRGFDv/preview" allow="autoplay"></iframe>
     </li>
+
     <li>
       <b>🔐 Password Manager using Python</b><br>
-      A secure and beginner-friendly Python project to store and manage passwords locally. Built using Tkinter for GUI, includes encryption features for data safety.<br>
+      A simple password manager that stores encrypted passwords securely using Tkinter for the UI.<br>
       🔗 <a href="https://github.com/Afirasyed26/password-manager" target="_blank">View on GitHub</a>
     </li>
   </ul>
 
-
   <div class="skills">
     <h2>💡 Skills</h2>
     <ul>
-      <li>Power BI, Tableau</li>
-      <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-      <li>MySQL, Excel</li>
-      <li>Data Cleaning, Data Visualization</li>
-      <li>Problem Solving, Teamwork</li>
+      <li><i class="fas fa-chart-bar"></i> Power BI, Tableau</li>
+      <li><i class="fab fa-python"></i> Python (Pandas, NumPy, Matplotlib)</li>
+      <li><i class="fas fa-database"></i> MySQL, Excel</li>
+      <li><i class="fas fa-broom"></i> Data Cleaning, Visualization</li>
+      <li><i class="fas fa-users"></i> Teamwork, Communication</li>
     </ul>
   </div>
 
   <div class="contact">
     <h2>📬 Contact</h2>
-    <p>📧 <strong>Email:</strong> <a href="mailto:suharasheik@gmail.com">suharasheik@gmail.com</a></p>
-    <p>📱 <strong>Phone:</strong> <a href="tel:+917540022488">+91 75400 22488</a></p>
-    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/afira-syed-599b43232" target="_blank">linkedin.com/in/afira-syed-599b43232</a></p>
+    <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:suharasheik@gmail.com">suharasheik@gmail.com</a></p>
+    <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:+917540022488">+91 75400 22488</a></p>
+    <p><i class="fab fa-linkedin"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/afira-syed-599b43232" target="_blank">linkedin.com/in/afira-syed</a></p>
   </div>
 
 </body>
 </html>
-
